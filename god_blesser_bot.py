@@ -67,4 +67,4 @@ def send_help(message):
 def say_true (message) :
     bot.send_message(message.chat.id , "Це правда кста")
 
-bot.polling(none_stop=True)
+bot.infinity_polling(none_stop=True)
