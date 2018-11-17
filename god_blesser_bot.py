@@ -44,7 +44,7 @@ def send_bless(message):
                 continue
     if result==0:
         with open('Data.txt', 'r+') as fio:
-            bot.send_message(message.chat.id, 'Blessing you')
+            bot.send_message(message.chat.id, slova[random.randint(0,len(slova)-1)] )
             data = fio.read()
             fio.seek(0)
             fio.write("[" + str(time.asctime().split(" ")[2]) + "," + str(message.chat.id) + "]\n" + data)
